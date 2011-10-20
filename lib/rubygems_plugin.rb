@@ -1,6 +1,6 @@
 require 'rubygems/command_manager'
 require 'rubygems-source-cli'
-require 'rubygems-source-cli/command'
+require 'rubygems-source-cli/command_patch'
 
 Rubygems::Source::CLI::COMMANDS.each do |cmd|
   filename   = "#{cmd}_command"
