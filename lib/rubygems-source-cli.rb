@@ -6,3 +6,5 @@ module Rubygems
     end
   end
 end
+
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "test", "test_helper")) if ENV['RUBY_ENV'] == 'test'
