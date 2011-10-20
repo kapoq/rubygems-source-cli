@@ -11,7 +11,7 @@ yank`:
 Usage
 -----
 
-API keys should be stored in YAML format in `~/.gem/credentials`:
+API keys should be stored in YAML format in `$HOME/.gem/credentials`:
 
     ---
     :rubygems_api_key: 198dbad38sadasd87
@@ -19,14 +19,13 @@ API keys should be stored in YAML format in `~/.gem/credentials`:
 
 Then specify `--host` and `--key` options when pushing/yanking:
 
-    $ gem push mygem-1.0.0.gem --host https://example.com --key
-    another_key
+    $ gem push mygem-1.0.0.gem --host https://example.com --key another_key
     $ gem yank mygem-1.0.0.gem --host https://example.com --key another_key
 
 Install
 -------
 
-* `gem install rubygems-source-cli
+* `gem install rubygems-source-cli`
 
 or add it to your `Gemfile`:
 
