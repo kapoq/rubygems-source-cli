@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Rubygems::Source::CLI::VERSION
   s.authors     = ["dave@kapoq.com"]
   s.email       = ["dave@kapoq.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/kapoq/rubygems-source-cli"
   s.summary     = "Patches for gem serve, gem push, gem yank, and some utilities"
-  s.description = "Patches for gem serve, gem push, gem yank, and some utilities"
+  s.description = "Patches for gem serve, gem push, gem yank, and some utilities to allow use of non-Rubygems.org gem sources"
 
   s.add_development_dependency "cucumber"
   s.add_development_dependency "aruba"
