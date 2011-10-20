@@ -1,5 +1,5 @@
 class Gem::Commands::PushCommand < Gem::Command
-  RUBYGEMS_HOST        = "rubygems.org"
+  RUBYGEMS_HOST = "rubygems.org"
   
   def execute
     sign_into_rubygems if host_is_rubygems? && !Gem.configuration.rubygems_api_key
@@ -14,8 +14,6 @@ class Gem::Commands::PushCommand < Gem::Command
 
   def host_is_rubygems?
     uri = ENV['RUBYGEMS_HOST'] || options[:host] || Gem.host
-    tval = URI.parse(uri).host == RUBYGEMS_HOST
-    puts tval
-    tval
+    URI.parse(uri).host == RUBYGEMS_HOST
   end
 end
