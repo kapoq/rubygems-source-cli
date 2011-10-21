@@ -1,7 +1,6 @@
 require 'rubygems/command_manager'
 require 'rubygems/command'
 require 'rubygems-source-cli'
-require 'rubygems-source-cli/command_patch'
 
 #
 # Load files and apply patches for each command

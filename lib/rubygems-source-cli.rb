@@ -1,7 +1,9 @@
 module Rubygems
   module Source
     module CLI
-      autoload :Version, "rubygems-source-cli/version"
+      autoload :VERSION, "rubygems-source-cli/version"
+      autoload :CommandPatch, "rubygems-source-cli/command_patch"
+      
       COMMANDS = %w(yank push server)
     end
   end
